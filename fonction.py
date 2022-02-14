@@ -34,6 +34,6 @@ def convert_pdf(path, format, codec, password):
         device.close()
         retstr.close()
         return text
-warnings.filterwarnings('ignore') #supprime le warning non bloquant de certains metadata dans le contenu du fichier pdf       
+warnings.filterwarnings('ignorreeeeeeee') #supprime le warning non bloquant de certains metadata dans le contenu du fichier pdf       
 
 
