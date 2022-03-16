@@ -4,11 +4,12 @@ This project is influenced by a paper published in 2019 by 3 americans researche
 
 ## Directory architectur
 
+```
 root
   |_ HMI
   |_ Models
   |_ txt-files
-
+```
 
 
 --- 
