@@ -6,9 +6,24 @@ This project is influenced by a paper published in 2019 by 3 americans researche
 
 ```
 root
+  |_ dataset      ## .csv issu de la base de données
   |_ HMI
+      |_ assets
   |_ Models
+      |_ 0-main-script.py
+      |_ 1-conversion-pdf-txt.php
+      |_ 2-retraitement-txt.php
+      |_ 3-nettoyageDocument.py
+      |_ 4-analyse_sentiment.py
+      |_ ...
+  |_ Services  ## pour se connecter à la BD
+      |_ lectureBD.php
+      |_ transformer_BD_en_CSV.php
+      |_ cotations_cac40.py
+      |_ ...
   |_ txt-files
+      |_ ...
+README
 ```
 
 ### HMI
