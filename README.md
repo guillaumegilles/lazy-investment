@@ -1,4 +1,6 @@
-# Lazy Prices for CAC40
+# Lazy Investments
+
+[![Build Status](https://img.shields.io/azure-devops/build/uifabric/fabricpublic/164/master?style=flat-square)](https://dev.azure.com/uifabric/fabricpublic/_build?definitionId=164) ![GitHub contributors](https://img.shields.io/github/contributors/microsoft/fluentui?style=flat-square) ![GitHub top language](https://img.shields.io/github/languages/top/microsoft/fluentui?style=flat-square) [![Twitter Follow](https://img.shields.io/twitter/follow/fluentui?logo=twitter&style=flat-square)](https://twitter.com/FluentUI?ref_src=twsrc%5Etfw)
 
 This project is influenced by a paper published in 2019 by 3 americans researchers[^1] which introduce the idea of stock prices predictions based on language changing in financial report. Throught this porject, we are trying to replicate this investment strategy on french listed companies in the CAC40 indice.
 
