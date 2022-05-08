@@ -10,6 +10,7 @@ lemmatizer, enlver les mots n'apportant pas de sens dans le document, supprimer 
   # Importe les librairies
 #from connexionDatabase import parcourrir
 import connexionDatabase as service
+import ftpServices as ftpjob
 import os
 import spacy
 from spacy_lefff import LefffLemmatizer, POSTagger
@@ -67,8 +68,8 @@ def French_Preprocess_listofSentence(listofSentence):
 def docNettoye(docTokenize):
     elements = " "
     
-    for el in docTokenize:
-        elements += el + ' '
+    for elem in docTokenize:
+        elements += elem + ' '
         
     return elements
    
@@ -84,10 +85,19 @@ def recuperDocMotParMot(liste):
     liste.close()
     return liste_des_mots 
 
+"""############# Transfert des fichiers par FTP  (Download) #####################
+   Ici nous appellons la fonction telechergerFichier() par le bais de ftpjob
+   la fonction télécharge tous les fichiers txt depuis le dossirs distant 
+   /Fichiers_TXT_traites/ du serveur 'ftp.cluster031.hosting.ovh.net'
+   vers le dossiers local ../Fichiers txt/ de la racine du projet
+
+"""
+ftpjob.telechergerFichier()
 
 # Appelle la fonction connexion_bd pour charger le chemin relatif contenant les fichies à ouvrir
 #chemin = "../"+connexion_bd()
 chemin = "../"+service.parcourrir()
+
 # Changer le repertoir
 os.chdir(chemin)
 
@@ -99,14 +109,42 @@ for fiche in os.listdir():
     # Vérifie si l'extention du fichier est .txt
     if fiche.endswith('.txt'):
         fichier_du_dossier = f'{chemin}{fiche}'
-        fichier = (open(fichier_du_dossier, "r", encoding="UTF-8")) 
+        fichier = (open(fichier_du_dossier, "r", encoding="iso-8859-1")) 
         lst = recuperDocMotParMot(fichier)
+        fichier.close()
         french_text = pd.DataFrame(lst, columns =['text'])
         french_preprocess_list = French_Preprocess_listofSentence(french_text['text'])
+        # Convertit   french_preprocess_list en string
+        french_preprocess_list = ''.join(str(elem) for elem in   french_preprocess_list)
+       
+        # Ouvre à nouveau le fichier en écriture et y affecté le contenu pré raité
+        fichier_net = open(fichier_du_dossier, "w", encoding="iso-8859-1")
+        #for  ligne in french_preprocess_list:
+        fichier_net.write(french_preprocess_list)
+        fichier_net.close()
+        #lst1 = recuperDocMotParMot(fichier_net)
+        #french_text = pd.DataFrame(lst1, columns =['text'])
+        #french_preprocess_list = French_Preprocess_listofSentence(french_text['text'])
+        #fichier_net1 = ' '.join(fichier_net)
+        #fichier_net.write(french_preprocess_list)
+        #fichier_net.write(' '.join(french_preprocess_list))
         print("************************************************************************\n")
         print('Voici le document de base : '+docNettoye(lst))
         print("\n")
         print("************************************************************************\n")
+        print("Filename : ",f'{fiche}')
         print("\n")
+        #print('Voici le document nettoyée : '+docNettoye((fichier_net1)))
+        #print(fichier_net)
         print('Voici le document nettoyée : '+docNettoye(french_preprocess_list))
         print("\n")
+
+
+"""################ Transfert des fichiers par FTP  (Uplaoad) #####################
+    Ici nous appellons la fonction deposerFichier() par le bais de ftpjob
+    la fonction déverse tous les fichiers txt néttoyés depuis le dossier local ../Fichiers txt
+    vers le dossiers distant  /Fichiers_TXT_traites/ du serveur 'ftp.cluster031.hosting.ovh.net'
+
+
+"""
+#ftpjob.deposerFichier()
