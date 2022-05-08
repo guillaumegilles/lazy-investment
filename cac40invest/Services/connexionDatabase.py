@@ -53,6 +53,7 @@ def parcourrir():
     db.close()
     curseur.close()
 
+""" Cette partie est en cours de développement """
 # Ajouter les informations d'un fichier dans la table documents 
 def enregistrerFichier(document):
     # Enregistre les informations du fichier dans la base de données
@@ -69,7 +70,7 @@ def enregistrerFichier(document):
     curseur.execute(sql, infoFichier)
     db.commit()
     print("enregistrement effectué !")
-    print(curseur.rowcount, " lingnes insérées") 
+    print(curseur.rowcount, " lignes insérées") 
     #fermeture de la connexion à la base de données
     db.close()
     curseur.close()
