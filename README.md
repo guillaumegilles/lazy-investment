@@ -1,45 +1,46 @@
 # Lazy Investments
 
-[![Build Status](https://img.shields.io/azure-devops/build/uifabric/fabricpublic/164/master?style=flat-square)](https://dev.azure.com/uifabric/fabricpublic/_build?definitionId=164) ![GitHub contributors](https://img.shields.io/github/contributors/microsoft/fluentui?style=flat-square) ![GitHub top language](https://img.shields.io/github/languages/top/microsoft/fluentui?style=flat-square) [![Twitter Follow](https://img.shields.io/twitter/follow/fluentui?logo=twitter&style=flat-square)](https://twitter.com/FluentUI?ref_src=twsrc%5Etfw)
+Lazy investment is a Machine Learning project to help investment decision making based on firms’ publications. This project is influenced by a paper published in 2019 by three americans researchers, Lauren Cohen, Christopher Malloy and Quoc Nguyen. They introduced the idea that when firms make an active change in their reporting practices, this conveys an important signal about future firm operations. Changes to the language and construction of financial reports also have strong implications for firms’ future returns.
 
-This project is influenced by a paper published in 2019 by 3 americans researchers[^1] which introduce the idea of stock prices predictions based on language changing in financial report. Throught this porject, we are trying to replicate this investment strategy on french listed companies in the CAC40 indice.
+- [Lazy Investments](#lazy-investments)
+  - [Directories Architecture](#directories-architecture)
+    - [Dataset](#dataset)
+    - [HMI](#hmi)
+    - [Model](#model)
+    - [Services](#services)
+    - [text-files](#text-files)
 
-## Directory Architecture
+## Directories Architecture
 
-```
+```shell
 root
-  |_ dataset      ## .csv issu de la base de données
+  |_ Dataset
   |_ HMI
       |_ assets
-  |_ Models
-      |_ 0-main-script.py
-      |_ 1-conversion-pdf-txt.php
-      |_ 2-retraitement-txt.php
-      |_ 3-nettoyageDocument.py
-      |_ 4-analyse_sentiment.py
-      |_ ...
-  |_ Services  ## pour se connecter à la BD
-      |_ lectureBD.php
-      |_ transformer_BD_en_CSV.php
-      |_ cotations_cac40.py
-      |_ ...
+  |_ Model
+  |_ Services
   |_ txt-files
-      |_ ...
 README
 ```
 
+[Back to the top](#lazy-investments)
+
+### Dataset
+
+Where `.csv` files storing all our data used in our models are located.
+
 ### HMI
 
-A directory where you can find all our front-end code.
+A directory where you can find all the front-end source code.
 
-### Models
+### Model
 
 This directory host our back-end treasure chests 💰🏴‍☠ !!
+
+### Services
+
+Source code to connect to the database of the project.
 
 ### text-files
 
 A directory where all the financial documentation in .txt fornat is located.
-
---- 
-
-[^1] Lauren Cohen, Christopher Malloy & Quoc Nguyen
