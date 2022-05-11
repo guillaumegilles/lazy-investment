@@ -1,0 +1,94 @@
+[33mcommit 1fe08918b78aded59bf66d11847a3f1f6f31b90f[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Guillaume Gilles <33703924+guillaumegilles@users.noreply.github.com>
+Date:   Wed Mar 16 16:01:00 2022 +0100
+
+    Updated "Directory Architecture"
+
+[33mcommit 7c2ea8d17e12299827a69c8351b229189d0d35df[m
+Author: Guillaume Gilles <33703924+guillaumegilles@users.noreply.github.com>
+Date:   Wed Mar 16 15:53:54 2022 +0100
+
+    update root description
+
+[33mcommit cb3733f4cd4ec94741e115c13044244343889b49[m
+Merge: 8651af2 b2bc8ce
+Author: Guillaume Gilles <33703924+guillaumegilles@users.noreply.github.com>
+Date:   Mon Mar 14 22:54:44 2022 +0100
+
+    Merge pull request #1 from guillaumegilles/master
+    
+    Master
+
+[33mcommit b2bc8ce3f5f0c425420b9a887057e55eebeec026[m[33m ([m[1;31morigin/master[m[33m)[m
+Merge: e4496f7 8651af2
+Author: guillaumegilles <guillaumegilles@me.com>
+Date:   Mon Mar 14 22:50:44 2022 +0100
+
+    directory tree and clean-up
+
+[33mcommit e4496f7a6426b38ea49631c052e843476dca2607[m
+Author: guillaumegilles <guillaumegilles@me.com>
+Date:   Mon Mar 14 22:30:01 2022 +0100
+
+    directory tree and clean-up
+
+[33mcommit 8651af2a7d00c8c9fe0a40947cc57bd0a787f246[m
+Merge: c1d2efd 18400bd
+Author: MHOUTOIR MZE Djaffar <djaffar_mze@hotmail.fr>
+Date:   Fri Mar 11 14:10:42 2022 +0100
+
+    Merge https://github.com/guillaumegilles/lazy-prices-cac-40 into main
+
+[33mcommit c1d2efda0b93f6d9cd05048a8d4c9484ba4552f2[m
+Author: MHOUTOIR MZE Djaffar <djaffar_mze@hotmail.fr>
+Date:   Fri Mar 11 05:15:09 2022 +0100
+
+    Reorganisation de l'architecture du projet dont cac40invest est la racine
+
+[33mcommit 18400bd3c9b12d6d2d3143bbba9058ba1423c9df[m
+Author: TRIMBUR Jeremy <jeremy.trimbur@gmail.com>
+Date:   Fri Mar 4 14:32:43 2022 +0100
+
+    Retraitement du fichier txt
+
+[33mcommit 9a32db93d43d1c244ade02ee625a335f8c90c2ba[m
+Author: TRIMBUR Jeremy <jeremy.trimbur@gmail.com>
+Date:   Fri Mar 4 14:26:39 2022 +0100
+
+    Ajout fichier php de conversion php vers txt
+
+[33mcommit 23b2ea52c0a0ccde3e40de8a76fa1c31c15f991a[m
+Author: TRIMBUR Jeremy <jeremy.trimbur@gmail.com>
+Date:   Mon Feb 14 15:08:57 2022 +0100
+
+    code python 2
+
+[33mcommit 60283d54428405b09e1ee8d9fba9f18cfb6ecf0c[m
+Author: TRIMBUR Jeremy <jeremy.trimbur@gmail.com>
+Date:   Mon Feb 14 14:56:33 2022 +0100
+
+    code python
+
+[33mcommit 398233abc89f5077f0621e4d76474d03bca78fd2[m
+Author: Guillaume Gilles <33703924+guillaumegilles@users.noreply.github.com>
+Date:   Fri Feb 4 20:59:54 2022 +0100
+
+    Create test
+
+[33mcommit 9dfe16be76b409cba0fcc6d75e6171707458b52b[m
+Author: Guillaume Gilles <33703924+guillaumegilles@users.noreply.github.com>
+Date:   Sun Jan 30 22:51:42 2022 +0100
+
+    Add files via upload
+
+[33mcommit c1aff5c2da1c88465fe63fdc68bb1ae4f048aeb9[m
+Author: Guillaume Gilles <33703924+guillaumegilles@users.noreply.github.com>
+Date:   Tue Jan 11 11:08:51 2022 +0100
+
+    Update README.md
+
+[33mcommit b4c7f03e4212dfc9db9fc7b9e566769fac098645[m
+Author: Guillaume Gilles <33703924+guillaumegilles@users.noreply.github.com>
+Date:   Wed Oct 6 10:47:18 2021 +0200
+
+    Initial commit

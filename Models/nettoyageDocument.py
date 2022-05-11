@@ -43,7 +43,7 @@ nltk.download('stopwords')
 # Initialise 
 french_stopwords = nltk.corpus.stopwords.words('french')
 
-mots = set(line.strip() for line in open('../Modele/dictionnaire.txt'))
+mots = set(line.strip() for line in open('../Models/dictionnaire.txt'))
 
 
 #mots = set(nltk.corpus.words.words())
@@ -147,4 +147,4 @@ for fiche in os.listdir():
 
 
 """
-#ftpjob.deposerFichier()
+ftpjob.deposerFichier()
