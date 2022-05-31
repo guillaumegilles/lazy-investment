@@ -10,7 +10,7 @@ Based on these researches, this Machine Learning project is designed to:
 
 **Through a web-based interface, Lazy Investissement is a tool designed to help investors to make better financial decisions.**
 
-### Table of contents
+## Table of contents
 
 - [Lazy Investments](#lazy-investments)
   - [Directories Architecture](#directories-architecture)
