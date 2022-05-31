@@ -12,13 +12,12 @@ Based on these researches, this Machine Learning project is designed to:
 
 ## Table of contents
 
-- [Lazy Investments](#lazy-investments)
+- [Lazy Investment](#lazy-investment)
   - [Directories Architecture](#directories-architecture)
     - [Dataset](#dataset)
     - [HMI](#hmi)
     - [Model](#model)
     - [Services](#services)
-    - [text-files](#text-files)
 
 ## Directories Architecture
 
@@ -29,28 +28,31 @@ root
       |_ assets
   |_ Models
   |_ Services
-  |_ txt-files
 README
 ```
 
-[Back to the top](#lazy-investments)
+[Back to the top](#lazy-investment)
 
 ### Dataset
 
 Where `.csv` files storing all our data used in our models are located.
 
+[Back to the top](#lazy-investment)
+
 ### HMI
 
 A directory where you can find all the front-end source code.
+
+[Back to the top](#lazy-investment)
 
 ### Models
 
 This directory host our back-end treasure chests 💰🏴‍☠ !!
 
+[Back to the top](#lazy-investment)
+
 ### Services
 
 Source code to connect to the database of the project.
 
-### text-files
-
-A directory where all the financial documentation in .txt fornat is located.
+[Back to the top](#lazy-investment)
