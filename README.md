@@ -10,6 +10,8 @@ Based on these researches, this Machine Learning project is designed to:
 
 **Through a web-based interface, Lazy Investissement is a tool designed to help investors to make better financial decisions.**
 
+### Table of contents
+
 - [Lazy Investments](#lazy-investments)
   - [Directories Architecture](#directories-architecture)
     - [Dataset](#dataset)
@@ -25,7 +27,7 @@ root
   |_ Dataset
   |_ HMI
       |_ assets
-  |_ Model
+  |_ Models
   |_ Services
   |_ txt-files
 README
@@ -41,7 +43,7 @@ Where `.csv` files storing all our data used in our models are located.
 
 A directory where you can find all the front-end source code.
 
-### Model
+### Models
 
 This directory host our back-end treasure chests 💰🏴‍☠ !!
 
