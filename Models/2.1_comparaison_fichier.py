@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
-#script pyhon permettant de comparer l'évolution du nb de mots pour une enterprise mais pour des années différentes à partir du fichier TXT liste_entreprise.txt
+#script pyhon permettant de comparer l'Ã©volution du nb de mots pour une enterprise mais pour des annÃ©es diffÃ©rentes Ã  partir du fichier TXT liste_entreprise.txt
 list_of_words=[]
 file = open("C:/Users/trimbuj/Desktop/MASTER MIAGE/Projet de conception/test/liste_entreprise.txt", "r",encoding="utf-8")  
 for line in file:
