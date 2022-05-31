@@ -1,4 +1,4 @@
-# Lazy Investments
+# Lazy Investment
 
 Lazy investment is a *Machine Learning project* influenced by a paper published in 2019 by three American researchers, Lauren Cohen, Christopher J. Malloy, and Quoc Nguyen. They show that when firms make an active change in their reporting practices, this conveys an important signal about future firm operations. Changes to the language and construction of financial reports also have strong implications for firms’ future returns. Changes in language referring to the executive (CEO and CFO) team, regarding litigation, or in the risk factor section of the documents are especially informative for future returns.
 
